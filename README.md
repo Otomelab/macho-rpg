@@ -2,7 +2,7 @@
 
 雑居ビル3階のプライベートサロンで、高瀬航（たかせ わたる、「高瀬さん」）に見てもらいながらマッチョを目指す、軽いブラウザRPGです。実際にやったスクワットや腕立ての回数が、経験値になります。
 
-公開URLは [https://ayumisan.github.io/slot-091/](https://ayumisan.github.io/slot-091/) です。ページの出どころは `main` ブランチのルートです。
+公開するときは、GitHub の Settings → Pages で Branch を `main`、Folder を `/ (root)` にします。URLは [https://ayumisan.github.io/slot-091/](https://ayumisan.github.io/slot-091/) です。
 
 ## 遊び方
 
