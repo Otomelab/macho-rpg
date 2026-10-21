@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#241c17">
+  <title>マッチョを目指そうRPG</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e07a3d'/%3E%3Cpath d='M8 22h16v3H8zm2-3 2-8h2l1 5 1-5h2l2 8h-2l-1-4-1 4h-2l-1-4-1 4z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <section id="title">
+      <div class="title-copy">
+        <p class="kicker">パーソナルトレーナー 高瀬航</p>
+        <h1>マッチョを目指そうRPG</h1>
+        <p class="lead">雑居ビル3階のサロンで、筋トレが経験値になる。</p>
+      </div>
+      <div class="title-figure">
+        <img src="assets/takase_main.png" alt="高瀬航の全身" width="1024" height="1536">
+      </div>
+      <div class="title-panel">
+        <label class="field">呼び名
+          <input id="nameField" maxlength="16" value="由衣さん" autocomplete="off" enterkeyhint="done">
+        </label>
+        <div class="actions">
+          <button type="button" class="primary" id="continue" data-action="continue" hidden>つづきから</button>
+          <button type="button" class="primary" id="start" data-action="start">はじめる</button>
+        </div>
+        <p class="fine">記録はこのブラウザだけ。通信も、合鍵も、いりません。</p>
+      </div>
+    </section>
+
+    <section id="play" hidden>
+      <header class="top">
+        <div>
+          <p class="kicker">高瀬さんのサロン</p>
+          <h1>マッチョを目指そうRPG</h1>
+          <p class="sub"><span id="who">由衣さん</span> · <span id="stageName">これから</span></p>
+        </div>
+        <p id="streak" class="streak">連続は今日から</p>
+      </header>
+
+      <div class="hero" aria-hidden="true">
+        <div class="hero-bg"></div>
+        <div class="portrait-slot">
+          <div class="portrait breathe">
+            <img id="faceA" class="face on" alt="" src="assets/expressions/takase/02_笑顔.png" width="301" height="464">
+            <img id="faceB" class="face" alt="" src="assets/expressions/takase/02_笑顔.png" width="301" height="464">
+          </div>
+        </div>
+      </div>
+
+      <div id="speech">
+        <div class="speech-main">
+          <p class="speaker">高瀬さん</p>
+          <p id="bubble" aria-live="polite">あ、いらっしゃい。</p>
+        </div>
+        <button type="button" id="nextLine" class="next" data-action="next" hidden>次へ</button>
+      </div>
+
+      <div id="strip"></div>
+      <main id="panel"></main>
+      <nav>
+        <button type="button" data-action="nav" data-nav="home">ホーム</button>
+        <button type="button" data-action="nav" data-nav="train">トレ</button>
+        <button type="button" data-action="nav" data-nav="quest">依頼</button>
+        <button type="button" data-action="nav" data-nav="boss">ボス</button>
+        <button type="button" data-action="nav" data-nav="log">記録</button>
+      </nav>
+    </section>
+  </div>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalText">
+      <p id="modalText"></p>
+      <div class="row">
+        <button type="button" data-action="no">やっぱりやめる</button>
+        <button type="button" class="primary" data-action="yes">うん</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
