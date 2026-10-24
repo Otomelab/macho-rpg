@@ -2,7 +2,7 @@
 
 雑居ビル3階のプライベートサロンで、高瀬航（たかせ わたる、「高瀬さん」）に見てもらいながらマッチョを目指す、軽いブラウザRPGです。実際にやったスクワットや腕立ての回数が、経験値になります。
 
-公開するときは、GitHub の Settings → Pages で Branch を `main`、Folder を `/ (root)` にします。URLは [https://ayumisan.github.io/slot-091/](https://ayumisan.github.io/slot-091/) です。
+公開するときは、GitHub の Settings → Pages で Branch を `main`、Folder を `/ (root)` にします。URLは [https://otomelab.github.io/macho-rpg/](https://otomelab.github.io/macho-rpg/) です。
 
 ## 遊び方
 
@@ -47,6 +47,6 @@ node --test
 
 表情は約300ミリ秒でクロスフェードします。同じ顔を短時間に何度も切り替えないよう、次の表情までは少し間を置きます。褒め言葉は場面ごとに引き出しを分けて、直前と同じセリフを避けます。
 
-立ち絵と表情、サロンの背景は [ayumisan/slot-097](https://github.com/ayumisan/slot-097) の画像です。口調と「具体的に、くり返さず、途中でやめても褒める」は、公開されている筋トレ応援の高瀬さんに合わせています。
+立ち絵と表情、サロンの背景は [Otomelab/macho-rpg](https://github.com/Otomelab/macho-rpg) の画像です。口調と「具体的に、くり返さず、途中でやめても褒める」は、公開されている筋トレ応援の高瀬さんに合わせています。
 
 設定は、公開されている高瀬航のサロンです。雑居ビルの3階、入会金も月額もなく都度払い、チャコールのポロ、右頬の浅いえくぼ。プレイヤーの初期の呼び名は由衣さんです。非公開の slot-096 は変更しておらず、原文や秘密情報もコピーしていません。この環境からはそのリポジトリを読めなかったため、物語は公開側の設定だけを使っています。
